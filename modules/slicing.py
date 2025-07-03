@@ -45,7 +45,7 @@ import cv2
 import os
 
 # Load image
-image_path = "/home/pi/SAHI-YOLOX/image_data/main_data/small-vehicles1.jpeg"
+image_path = "image_data/main_data/small-vehicles1.jpeg"
 image = cv2.imread(image_path)
 
 # Check if image loaded successfully
@@ -53,7 +53,7 @@ if image is None:
     raise FileNotFoundError(f"Image not found at {image_path}")
 
 # Output directory
-output_dir = "/home/pi/SAHI-YOLOX/image_data/data_processing_area"
+output_dir = "image_data/data_processing_area"
 os.makedirs(output_dir, exist_ok=True)
 
 # Slice the image (returns list of dicts with slice image + metadata)
