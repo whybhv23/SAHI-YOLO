@@ -43,6 +43,8 @@
 from sahi.slicing import slice_image
 import cv2
 import os
+import numpy as np
+import math
 
 # Load image
 image_path = "image_data/main_data/city-7569067.jpg"
@@ -52,20 +54,39 @@ image = cv2.imread(image_path)
 if image is None:
     raise FileNotFoundError(f"Image not found at {image_path}")
 
+# Get original dimensions
+orig_height, orig_width = image.shape[:2]
+
+# Compute new padded dimensions (next multiple of 640)
+new_height = math.ceil(orig_height / 640) * 640
+new_width = math.ceil(orig_width / 640) * 640
+
+# Add white padding (255 for white in BGR)
+top = 0
+bottom = new_height - orig_height
+left = 0
+right = new_width - orig_width
+
+padded_image = cv2.copyMakeBorder(
+    image, top, bottom, left, right,
+    borderType=cv2.BORDER_CONSTANT,
+    value=[255, 255, 255]  # White padding
+)
+
 # Output directory
 output_dir = "image_data/data_processing_area"
 os.makedirs(output_dir, exist_ok=True)
 
-# Slice the image (returns list of dicts with slice image + metadata)
+# Slice the padded image
 slices = slice_image(
-    image=image,
+    image=padded_image,
     slice_height=640,
     slice_width=640,
     overlap_height_ratio=0.2,
     overlap_width_ratio=0.2,
 )
 
-# Manually save the slices
+# Save the slices
 for idx, slice_info in enumerate(slices):
     slice_img = slice_info["image"]
     save_path = os.path.join(output_dir, f"slice_{idx:03d}.png")
