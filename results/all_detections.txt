@@ -1,0 +1,285 @@
+
+? slice_000.png - 0 detections
+
+? slice_001.png - 0 detections
+
+? slice_002.png - 0 detections
+
+? slice_003.png - 0 detections
+
+? slice_004.png - 0 detections
+
+? slice_005.png - 0 detections
+
+? slice_006.png - 0 detections
+
+? slice_007.png - 0 detections
+
+? slice_008.png - 0 detections
+
+? slice_009.png - 0 detections
+
+? slice_010.png - 0 detections
+
+? slice_011.png - 0 detections
+
+? slice_012.png - 0 detections
+
+? slice_013.png - 0 detections
+
+? slice_014.png - 0 detections
+
+? slice_015.png - 0 detections
+
+? slice_016.png - 0 detections
+
+? slice_017.png - 0 detections
+
+? slice_018.png - 0 detections
+
+? slice_019.png - 0 detections
+
+? slice_020.png - 0 detections
+
+? slice_021.png - 0 detections
+
+? slice_022.png - 0 detections
+
+? slice_023.png - 0 detections
+
+? slice_024.png - 0 detections
+
+? slice_025.png - 0 detections
+
+? slice_026.png - 0 detections
+
+? slice_027.png - 0 detections
+
+? slice_028.png - 0 detections
+
+? slice_029.png - 1 detections
+  [person] (463, 173, 548, 540), Score: 0.66
+
+? slice_030.png - 0 detections
+
+? slice_031.png - 0 detections
+
+? slice_032.png - 0 detections
+
+? slice_033.png - 0 detections
+
+? slice_034.png - 0 detections
+
+? slice_035.png - 1 detections
+  [person] (382, 402, 443, 526), Score: 0.74
+
+? slice_036.png - 2 detections
+  [car] (480, 407, 638, 528), Score: 0.73
+  [car] (577, 509, 639, 638), Score: 0.70
+
+? slice_037.png - 1 detections
+  [car] (0, 409, 169, 503), Score: 0.78
+
+? slice_038.png - 0 detections
+
+? slice_039.png - 0 detections
+
+? slice_040.png - 0 detections
+
+? slice_041.png - 4 detections
+  [car] (251, 384, 356, 450), Score: 0.89
+  [car] (270, 291, 335, 352), Score: 0.68
+  [car] (177, 293, 227, 332), Score: 0.61
+  [car] (471, 330, 543, 382), Score: 0.60
+
+? slice_042.png - 2 detections
+  [car] (394, 459, 518, 557), Score: 0.60
+  [car] (501, 466, 639, 585), Score: 0.59
+
+? slice_043.png - 4 detections
+  [car] (129, 518, 294, 632), Score: 0.90
+  [car] (2, 465, 157, 584), Score: 0.78
+  [car] (484, 549, 638, 639), Score: 0.66
+  [car] (215, 500, 369, 604), Score: 0.54
+
+? slice_044.png - 1 detections
+  [car] (214, 593, 406, 639), Score: 0.65
+
+? slice_045.png - 0 detections
+
+? slice_046.png - 1 detections
+  [person] (251, 508, 313, 625), Score: 0.79
+
+? slice_047.png - 0 detections
+
+? slice_048.png - 7 detections
+  [person] (23, 216, 95, 419), Score: 0.86
+  [person] (257, 252, 306, 363), Score: 0.59
+  [person] (157, 238, 267, 410), Score: 0.55
+  [person] (213, 40, 268, 176), Score: 0.51
+  [car] (575, 0, 639, 169), Score: 0.78
+  [car] (361, 122, 576, 304), Score: 0.71
+  [train] (3, 190, 639, 638), Score: 0.61
+
+? slice_049.png - 1 detections
+  [car] (63, 0, 319, 171), Score: 0.74
+
+? slice_050.png - 0 detections
+
+? slice_051.png - 0 detections
+
+? slice_052.png - 0 detections
+
+? slice_053.png - 6 detections
+  [car] (454, 448, 638, 587), Score: 0.90
+  [car] (293, 371, 427, 478), Score: 0.90
+  [car] (156, 298, 276, 390), Score: 0.82
+  [car] (129, 150, 214, 220), Score: 0.69
+  [car] (423, 334, 566, 444), Score: 0.67
+  [car] (274, 246, 380, 333), Score: 0.62
+
+? slice_054.png - 4 detections
+  [car] (211, 482, 406, 605), Score: 0.85
+  [car] (529, 0, 639, 71), Score: 0.66
+  [car] (0, 448, 123, 587), Score: 0.57
+  [suitcase] (238, 593, 450, 639), Score: 0.64
+
+? slice_055.png - 4 detections
+  [car] (127, 5, 294, 121), Score: 0.92
+  [car] (431, 117, 635, 261), Score: 0.90
+  [car] (15, 0, 154, 72), Score: 0.76
+  [car] (308, 52, 490, 196), Score: 0.73
+
+? slice_056.png - 5 detections
+  [car] (211, 80, 419, 205), Score: 0.94
+  [car] (205, 251, 472, 410), Score: 0.83
+  [car] (471, 352, 639, 522), Score: 0.82
+  [car] (459, 242, 639, 378), Score: 0.60
+  [car] (0, 2, 141, 255), Score: 0.54
+
+? slice_057.png - 6 detections
+  [person] (271, 50, 323, 172), Score: 0.77
+  [car] (265, 447, 626, 637), Score: 0.94
+  [car] (0, 351, 264, 534), Score: 0.93
+  [car] (0, 241, 235, 388), Score: 0.88
+  [car] (440, 339, 639, 501), Score: 0.87
+  [car] (150, 221, 372, 373), Score: 0.82
+
+? slice_058.png - 5 detections
+  [person] (445, 297, 507, 476), Score: 0.89
+  [person] (250, 0, 313, 114), Score: 0.83
+  [car] (201, 484, 580, 639), Score: 0.94
+  [car] (0, 450, 114, 639), Score: 0.84
+  [car] (0, 335, 246, 515), Score: 0.80
+
+? slice_059.png - 2 detections
+  [person] (157, 297, 219, 476), Score: 0.89
+  [car] (0, 483, 294, 639), Score: 0.88
+
+? slice_060.png - 0 detections
+
+? slice_061.png - 2 detections
+  [car] (404, 0, 641, 169), Score: 0.61
+  [car] (0, 243, 166, 481), Score: 0.54
+
+? slice_062.png - 2 detections
+  [car] (0, 0, 126, 165), Score: 0.80
+  [suitcase] (173, 71, 378, 254), Score: 0.60
+
+? slice_063.png - 1 detections
+  [cell phone] (287, 39, 475, 194), Score: 0.63
+
+? slice_064.png - 0 detections
+
+? slice_065.png - 2 detections
+  [car] (260, 108, 463, 271), Score: 0.93
+  [car] (456, -1, 640, 74), Score: 0.75
+
+? slice_066.png - 4 detections
+  [car] (66, 205, 347, 421), Score: 0.75
+  [car] (0, 0, 123, 75), Score: 0.58
+  [car] (222, 82, 479, 273), Score: 0.53
+  [suitcase] (247, 16, 405, 95), Score: 0.52
+
+? slice_067.png - 5 detections
+  [car] (186, 165, 453, 354), Score: 0.91
+  [car] (80, 338, 403, 554), Score: 0.90
+  [car] (496, 314, 639, 532), Score: 0.88
+  [car] (482, 531, 639, 639), Score: 0.79
+  [suitcase] (1, 576, 285, 641), Score: 0.69
+
+? slice_068.png - 2 detections
+  [car] (1, 533, 331, 640), Score: 0.74
+  [car] (0, 306, 342, 533), Score: 0.63
+
+? slice_069.png - 1 detections
+  [car] (270, 0, 625, 128), Score: 0.90
+
+? slice_070.png - 3 detections
+  [car] (200, 0, 577, 168), Score: 0.91
+  [car] (0, 0, 114, 133), Score: 0.84
+  [car] (459, 138, 640, 310), Score: 0.81
+
+? slice_071.png - 3 detections
+  [car] (0, 0, 290, 170), Score: 0.86
+  [car] (166, 135, 617, 350), Score: 0.57
+  [car] (24, 130, 625, 569), Score: 0.54
+
+? slice_072.png - 0 detections
+
+? slice_073.png - 1 detections
+  [suitcase] (180, 51, 537, 383), Score: 0.74
+
+? slice_074.png - 0 detections
+
+? slice_075.png - 0 detections
+
+? slice_076.png - 0 detections
+
+? slice_077.png - 0 detections
+
+? slice_078.png - 1 detections
+  [car] (473, 64, 639, 334), Score: 0.89
+
+? slice_079.png - 3 detections
+  [car] (482, 20, 639, 282), Score: 0.93
+  [car] (144, 0, 397, 42), Score: 0.77
+  [car] (0, 326, 246, 639), Score: 0.56
+
+? slice_080.png - 3 detections
+  [car] (0, 19, 355, 281), Score: 0.90
+  [car] (451, 36, 639, 337), Score: 0.73
+  [suitcase] (450, 39, 639, 337), Score: 0.67
+
+? slice_081.png - 1 detections
+  [suitcase] (0, 36, 343, 342), Score: 0.81
+
+? slice_082.png - 0 detections
+
+? slice_083.png - 0 detections
+
+? slice_084.png - 0 detections
+
+? slice_085.png - 0 detections
+
+? slice_086.png - 0 detections
+
+? slice_087.png - 0 detections
+
+? slice_088.png - 0 detections
+
+? slice_089.png - 0 detections
+
+? slice_090.png - 0 detections
+
+? slice_091.png - 0 detections
+
+? slice_092.png - 1 detections
+  [car] (12, 80, 638, 559), Score: 0.69
+
+? slice_093.png - 1 detections
+  [suitcase] (331, 222, 639, 625), Score: 0.81
+
+? slice_094.png - 0 detections
+
+? slice_095.png - 0 detections

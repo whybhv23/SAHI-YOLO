@@ -65,16 +65,16 @@ if __name__ == "__main__":
                         print(det_str)
                         all_f.write(det_str + "\n")
 
-                txt_path = os.path.join("results", f"{os.path.splitext(filename)[0]}.txt")
-                with open(txt_path, "w", encoding="utf-8") as f:
-                    for class_name, bbox, score in detections:
-                        f.write(f"{class_name} {bbox[0]} {bbox[1]} {bbox[2]} {bbox[3]} {score:.4f}\n")
+                # txt_path = os.path.join("results", f"{os.path.splitext(filename)[0]}.txt")
+                # with open(txt_path, "w", encoding="utf-8") as f:
+                #     for class_name, bbox, score in detections:
+                #         f.write(f"{class_name} {bbox[0]} {bbox[1]} {bbox[2]} {bbox[3]} {score:.4f}\n")
 
-                # Optional: draw and save
-                for class_name, bbox, score in detections:
-                    cv2.rectangle(image, (bbox[0], bbox[1]), (bbox[2], bbox[3]), (255,0, 255), 2)
-                    cv2.putText(image, f"{class_name} {int(score * 100)}%", (bbox[0], bbox[1] - 5),
-                                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+                # # Optional: draw and save
+                # for class_name, bbox, score in detections:
+                #     cv2.rectangle(image, (bbox[0], bbox[1]), (bbox[2], bbox[3]), (255,0, 255), 2)
+                #     cv2.putText(image, f"{class_name} {int(score * 100)}%", (bbox[0], bbox[1] - 5),
+                #                 cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
 
-                out_path = os.path.join("results", filename)
-                cv2.imwrite(out_path, image)
+                # out_path = os.path.join("results", filename)
+                # cv2.imwrite(out_path, image)

@@ -68,9 +68,9 @@ from PIL import Image, ImageDraw
 # === CONFIG ===
 ORIG_IMAGE_PATH = "image_data/main_data/city-7569067.jpg"
 SLICES_DIR = "image_data/data_processing_area"
-DETECTIONS_TXT = "text_data/results.txt"
+DETECTIONS_TXT = "results/all_detections.txt"
 CHUNK_WIDTH = 640
-CHUNK_HEIGHT = 580
+CHUNK_HEIGHT = 640
 
 # === Load original image ===
 orig_img = Image.open(ORIG_IMAGE_PATH)
@@ -113,7 +113,7 @@ for line in lines:
         main_y2 = chunk_y_offset + y2
 
         # Draw box and label
-        draw.rectangle([main_x1, main_y1, main_x2, main_y2], outline="red", width=2)
+        draw.rectangle([main_x1, main_y1, main_x2, main_y2], outline="green", width=5)
         draw.text((main_x1 + 2, main_y1 - 12), label, fill="red")
 
 # Save result
