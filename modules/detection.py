@@ -36,6 +36,9 @@ if __name__ == "__main__":
         input_h, input_w, _ = hailo.get_input_shape()
         print(f"Model input shape: {input_w}x{input_h}")
 
+        os.makedirs("results", exist_ok=True)  # Make sure results dir exists
+        all_txt_path = os.path.join("results", "all_detections.txt")
+
         for filename in sorted(os.listdir(args.input_dir)):
             if filename.lower().endswith((".jpg", ".jpeg", ".png")):
                 img_path = os.path.join(args.input_dir, filename)
@@ -43,6 +46,8 @@ if __name__ == "__main__":
 
                 if image is None:
                     print(f"? Failed to read: {img_path}")
+                    with open(all_txt_path, "a", encoding="utf-8") as all_f:
+                        all_f.write(f"? Failed to read: {img_path}\n")
                     continue
 
                 # Resize to model input
@@ -51,16 +56,19 @@ if __name__ == "__main__":
 
                 detections = extract_detections(output, image.shape[1], image.shape[0], class_names, args.score_thresh)
 
-                print(f"\n? {filename} - {len(detections)} detections")
-                for class_name, bbox, score in detections:
-                    print(f"  [{class_name}] {bbox}, Score: {score:.2f}")
+                header = f"\n? {filename} - {len(detections)} detections"
+                print(header)
+                with open(all_txt_path, "a", encoding="utf-8") as all_f:
+                    all_f.write(header + "\n")
+                    for class_name, bbox, score in detections:
+                        det_str = f"  [{class_name}] {bbox}, Score: {score:.2f}"
+                        print(det_str)
+                        all_f.write(det_str + "\n")
 
-                os.makedirs("results2", exist_ok=True)
                 txt_path = os.path.join("results", f"{os.path.splitext(filename)[0]}.txt")
                 with open(txt_path, "w", encoding="utf-8") as f:
                     for class_name, bbox, score in detections:
                         f.write(f"{class_name} {bbox[0]} {bbox[1]} {bbox[2]} {bbox[3]} {score:.4f}\n")
-
 
                 # Optional: draw and save
                 for class_name, bbox, score in detections:
@@ -69,5 +77,4 @@ if __name__ == "__main__":
                                 cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
 
                 out_path = os.path.join("results", filename)
-                os.makedirs("results", exist_ok=True)
                 cv2.imwrite(out_path, image)
