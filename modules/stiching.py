@@ -66,7 +66,7 @@ import re
 from PIL import Image, ImageDraw
 
 # === CONFIG ===
-ORIG_IMAGE_PATH = "image_data/main_data/small-vehicles1.jpeg"
+ORIG_IMAGE_PATH = "image_data/main_data/city-7569067.jpg"
 SLICES_DIR = "image_data/data_processing_area"
 DETECTIONS_TXT = "text_data/results.txt"
 CHUNK_WIDTH = 640

@@ -45,7 +45,7 @@ import cv2
 import os
 
 # Load image
-image_path = "image_data/main_data/small-vehicles1.jpeg"
+image_path = "image_data/main_data/city-7569067.jpg"
 image = cv2.imread(image_path)
 
 # Check if image loaded successfully

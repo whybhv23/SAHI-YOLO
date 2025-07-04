@@ -55,11 +55,11 @@ if __name__ == "__main__":
                 for class_name, bbox, score in detections:
                     print(f"  [{class_name}] {bbox}, Score: {score:.2f}")
 
-                # os.makedirs("results", exist_ok=True)
-                # txt_path = os.path.join("results", f"{os.path.splitext(filename)[0]}.txt")
-                # with open(txt_path, "w", encoding="utf-8") as f:
-                #     for class_name, bbox, score in detections:
-                #         f.write(f"{class_name} {bbox[0]} {bbox[1]} {bbox[2]} {bbox[3]} {score:.4f}\n")
+                os.makedirs("results2", exist_ok=True)
+                txt_path = os.path.join("results", f"{os.path.splitext(filename)[0]}.txt")
+                with open(txt_path, "w", encoding="utf-8") as f:
+                    for class_name, bbox, score in detections:
+                        f.write(f"{class_name} {bbox[0]} {bbox[1]} {bbox[2]} {bbox[3]} {score:.4f}\n")
 
 
                 # Optional: draw and save
